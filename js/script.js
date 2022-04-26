@@ -6,4 +6,7 @@ const menu = document.querySelector('.navMenu')
         menu.classList.toggle('active')
     })
 
-    console.log('hello wrold')
+   document.querySelectorAll('.navLink').forEach(n => n.addEventListener('click',()=>{
+        hambarger.classList.remove('active')
+        navMenu.classList.remove('active')
+    }))
